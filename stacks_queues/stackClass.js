@@ -45,15 +45,3 @@ class Stack {
 			return this._head.value;
 	}
 }
-
-
-
-var s = new Stack();
-s.push(2);
-s.push(4);
-s.push(6);
-s.push(7);
-console.log(s.pop())
-console.log(s.pop())
-console.log(s.size())
-s.push(7);
