@@ -7,14 +7,14 @@ class StackNode {
 
 class Stack {
 	constructor(){
-		this._top = -1;
+		this._top = 0;
 		this._head = null;
 	}
 	isEmpty(){
 		return this.size() === 0;
 	}
 	size(){
-		return this._top + 1;
+		return this._top;
 	}
 	push(value) {
 		let newNode = new StackNode(value);
@@ -48,3 +48,12 @@ class Stack {
 
 
 
+var s = new Stack();
+s.push(2);
+s.push(4);
+s.push(6);
+s.push(7);
+console.log(s.pop())
+console.log(s.pop())
+console.log(s.size())
+s.push(7);
